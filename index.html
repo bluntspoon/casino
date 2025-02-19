@@ -2,9 +2,24 @@
 <html>
 <head>
     <title>Hello Casino Lobby</title>
+    <style>
+        #game-frame {
+            display: none;
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+    <script>
+        function showGame() {
+            document.getElementById('game-frame').style.display = 'block';
+        }
+    </script>
+</head>
 </head>
 <body>
     <h1>Hello Casino Lobby</h1>
-    <a href="https://play.casino.andrewbevan.me/web/htmlgames/?name=Andrew">Play Pong Now!</a>
+    <button onclick="showGame()">Show Game</button>
+    <iframe id="game-frame" src="https://play.casino.andrewbevan.me/web/htmlgames/?name=Andrew"></iframe>
 </body>
 </html>
